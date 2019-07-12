@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".StudentFragment">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/appColor"
+            app:cardCornerRadius="10dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        app:srcCompat="@drawable/email"
+                        android:id="@+id/imgEmail"
+                        android:layout_weight="1"/>
+                <EditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#384840"
+                        android:layout_weight="2"
+                        android:hint="email or username"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="18dp"
+                        app:srcCompat="@drawable/key"
+                        android:id="@+id/imgPass"
+                        android:layout_weight="1"/>
+                <EditText
+                        android:id="@+id/edtPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:textColor="#384840"
+                        android:hint="password"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

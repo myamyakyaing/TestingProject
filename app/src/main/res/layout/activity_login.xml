@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#C2185B"
+        android:background="#9F153C"
         tools:context=".LoginActivity">
     <TextView
             android:id="@+id/toolbar1"
@@ -48,14 +48,14 @@
                 android:weightSum="3"
                 android:orientation="horizontal">
             <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    app:srcCompat="@drawable/user"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    app:srcCompat="@drawable/email"
                     android:id="@+id/imgEmail"
                     android:layout_weight="1"/>
             <EditText
                     android:id="@+id/edtEmail"
-                    android:layout_width="150dp"
+                    android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:textColor="#384840"
@@ -71,7 +71,7 @@
 
                 <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="30dp"
+                        android:layout_height="34dp"
                         app:srcCompat="@drawable/key"
                         android:id="@+id/imgPass"
                         android:layout_weight="1"/>

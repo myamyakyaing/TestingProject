@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#dcdcdc"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/imgRvStudent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_background"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"/>
+    <TextView
+            android:id="@+id/txtStudent"
+            android:layout_width="match_parent"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRvStudent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#FFFF"/>
+    <TextView
+            android:text="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtStudent1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtStudent"
+            android:textSize="15sp"
+            android:textColor="#FFFF"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
