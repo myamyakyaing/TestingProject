@@ -1,25 +1,23 @@
-package com.example.realproject
+package com.example.realproject.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
+import com.example.realproject.RecyclerViewholder
 
-class RecyclerActivitiesAdapter(var context: Context, var layout:Int, var imgList: MutableList<Int>, var titleList: MutableList<String>):
-            RecyclerView.Adapter<RecyclerViewholder>(){
+class RecyclerCourseDetailAdapter(var context: Context, var layout:Int,var titleList:MutableList<String>):
+    RecyclerView.Adapter<RecyclerViewholder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewholder {
         var inflater = LayoutInflater.from(context)
-        var view = inflater.inflate(layout,parent,false)
+        var view = inflater.inflate(layout, parent, false)
         return RecyclerViewholder(view)
     }
-
     override fun getItemCount(): Int {
-        return imgList.count()
+        return titleList.count()
     }
 
     override fun onBindViewHolder(holder: RecyclerViewholder, position: Int) {
-    holder.img_event.setImageResource(imgList[position])
-    holder.title_event.text = titleList[position]
+        holder.title_course_detail.text = titleList[position]
     }
 }

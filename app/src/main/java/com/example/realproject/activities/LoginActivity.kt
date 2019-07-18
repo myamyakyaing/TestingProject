@@ -1,4 +1,4 @@
-package com.example.realproject
+package com.example.realproject.activities
 
 import android.app.Activity
 import android.app.ProgressDialog
@@ -6,12 +6,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_login.*
-import android.widget.EditText
-import android.text.Editable
-import android.text.TextWatcher
 import android.util.Log
-import android.widget.Button
 import android.widget.Toast
+import com.example.realproject.R
 
 
 class LoginActivity : AppCompatActivity() {
@@ -39,7 +36,8 @@ class LoginActivity : AppCompatActivity() {
         btnLogin!!.isEnabled = false
 
         val progressDialog = ProgressDialog(this@LoginActivity,
-            com.example.realproject.R.style.AppTheme_Dark_Dialog)
+            R.style.AppTheme_Dark_Dialog
+        )
         progressDialog.isIndeterminate = true
         progressDialog.setMessage("Login...")
         progressDialog.show()

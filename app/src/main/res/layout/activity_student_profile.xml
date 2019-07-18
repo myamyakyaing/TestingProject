@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".activities.DetailProfileActivity">
+        tools:context=".activities.StudentProfileActivity">
     <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
@@ -18,7 +18,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="18dp"
                 app:srcCompat="@drawable/backarrow"
-                android:id="@+id/img_btn_back"/>
+                android:id="@+id/std_btn_back"/>
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
@@ -31,14 +31,14 @@
             <androidx.cardview.widget.CardView
                     android:layout_width="100dp"
                     app:cardCornerRadius="50dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="18dp"
                     android:layout_height="100dp">
-            <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    app:srcCompat="@drawable/profile"
-                    android:layout_gravity="center"
-                    android:id="@+id/imgTeacherProfile"/>
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/profile"
+                        android:layout_gravity="center"
+                        android:id="@+id/profileStudent"/>
             </androidx.cardview.widget.CardView>
             <LinearLayout
                     android:layout_width="match_parent"
@@ -49,7 +49,7 @@
 
 
                 <TextView
-                        android:id="@+id/txtTeacherName"
+                        android:id="@+id/txtStdName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -62,7 +62,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/nav_header_subtitle"
                         android:textSize="20dp"
-                        android:id="@+id/txtTeacherTrack"/>
+                        android:id="@+id/txtStdTrack"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -72,8 +72,8 @@
             android:layout_height="match_parent">
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal">
             <ImageView
@@ -83,20 +83,20 @@
                     android:src="@drawable/work"
                     android:layout_marginLeft="0dp"/>
             <TextView
-                    android:id="@+id/txtTechProfession"
-                    android:hint="Profession"
+                    android:id="@+id/txtStdProfession"
+                    android:hint="Profssion"
                     android:layout_width="match_parent"
                     android:layout_marginRight="8dp"
                     android:textSize="20dp"
                     android:background="@drawable/drawer_item_bg"
                     android:textColor="@color/appColor"
-                    android:layout_height="50dp"/>
+                    android:layout_height="40dp"/>
 
         </LinearLayout>
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
                 android:orientation="horizontal">
             <ImageView
                     android:id="@+id/imgStudent2"
@@ -105,20 +105,20 @@
                     android:src="@drawable/office"
                     android:layout_marginLeft="0dp"/>
             <TextView
-                    android:id="@+id/txtStudentName2"
-                    android:text="Ace Plus Solution Co.ltd"
+                    android:id="@+id/txtStdCompany"
+                    android:hint="Company Name"
                     android:layout_width="match_parent"
                     android:layout_marginRight="8dp"
                     android:textColor="@color/appColor"
                     android:background="@drawable/drawer_item_bg"
                     android:textSize="20dp"
-                    android:layout_height="50dp"/>
+                    android:layout_height="40dp"/>
 
         </LinearLayout>
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
                 android:orientation="horizontal">
             <ImageView
                     android:id="@+id/imgStudent3"
@@ -127,20 +127,20 @@
                     android:src="@drawable/address"
                     android:layout_marginLeft="0dp"/>
             <TextView
-                    android:id="@+id/txtStudentName3"
-                    android:text="Pantanaw St, Sangaung"
+                    android:id="@+id/txtStdAddress"
+                    android:hint="Present Address"
                     android:layout_width="match_parent"
                     android:layout_marginRight="8dp"
                     android:textSize="20dp"
                     android:textColor="@color/appColor"
                     android:background="@drawable/drawer_item_bg"
-                    android:layout_height="50dp"/>
+                    android:layout_height="40dp"/>
 
         </LinearLayout>
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
                 android:orientation="horizontal">
             <ImageView
                     android:id="@+id/imgStudent4"
@@ -149,21 +149,21 @@
                     android:src="@drawable/birthday"
                     android:layout_marginLeft="0dp"/>
             <TextView
-                    android:id="@+id/txtStudentName4"
-                    android:text="17/12/1996"
+                    android:id="@+id/txtStdDob"
+                    android:hint="Date of Birth"
                     android:layout_width="match_parent"
                     android:layout_marginRight="8dp"
                     android:textColor="@color/appColor"
                     android:background="@drawable/drawer_item_bg"
                     android:textSize="20dp"
-                    android:layout_height="50dp"/>
+                    android:layout_height="40dp"/>
 
         </LinearLayout>
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
                 android:orientation="horizontal">
             <ImageView
                     android:id="@+id/imgStudent5"
@@ -172,20 +172,20 @@
                     android:src="@drawable/phone"
                     android:layout_marginLeft="0dp"/>
             <TextView
-                    android:id="@+id/txtStudentName5"
-                    android:text="+95951104661"
+                    android:id="@+id/txtStdPhone"
+                    android:hint="Phone Number"
                     android:layout_width="match_parent"
                     android:layout_marginRight="8dp"
                     android:textSize="20dp"
                     android:textColor="@color/appColor"
                     android:background="@drawable/drawer_item_bg"
-                    android:layout_height="50dp"/>
+                    android:layout_height="40dp"/>
 
         </LinearLayout>
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
                 android:orientation="horizontal">
             <ImageView
                     android:id="@+id/imgStudent6"
@@ -194,16 +194,17 @@
                     android:src="@drawable/d_email"
                     android:layout_marginLeft="0dp"/>
             <TextView
-                    android:id="@+id/txtStudentName6"
-                    android:text="myamyakyaink.mmk1996@gmail.com"
+                    android:id="@+id/txtStdEmail"
+                    android:hint="Student Email"
                     android:layout_width="match_parent"
                     android:layout_marginRight="8dp"
                     android:textColor="@color/appColor"
                     android:background="@drawable/drawer_item_bg"
                     android:textSize="20dp"
-                    android:layout_height="70dp"/>
+                    android:layout_height="40dp"/>
 
         </LinearLayout>
     </LinearLayout>
+
 
 </LinearLayout>

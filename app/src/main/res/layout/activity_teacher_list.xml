@@ -6,9 +6,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".TeacherListActivity">
+        tools:context=".activities.TeacherListActivity">
 
-    <include layout="@layout/top_bar"/>
+    <include layout="@layout/tech_top_bar"/>
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvTeacher"
             android:layout_width="match_parent"

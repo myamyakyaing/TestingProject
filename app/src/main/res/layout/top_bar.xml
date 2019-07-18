@@ -5,18 +5,13 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <!--<com.google.android.material.appbar.AppBarLayout-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:theme="@style/AppTheme.AppBarOverlay">-->
 
         <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/toolbar1"
                 android:layout_width="match_parent"
+                app:title="Student List"
+                app:titleTextColor="#ffffff"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/appColor"
-                app:popupTheme="@style/AppTheme.PopupOverlay"/>
-
-    <!--</com.google.android.material.appbar.AppBarLayout>-->
+                android:background="@color/appColor"/>
 
 </LinearLayout>

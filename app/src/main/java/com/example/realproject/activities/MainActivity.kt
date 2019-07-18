@@ -1,9 +1,7 @@
-package com.example.realproject
+package com.example.realproject.activities
 
 import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.core.view.GravityCompat
 import androidx.appcompat.app.ActionBarDrawerToggle
 import android.view.MenuItem
@@ -11,10 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import android.view.Menu
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import kotlinx.android.synthetic.main.activity_course.*
+import com.example.realproject.R
 import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -27,28 +22,30 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setSupportActionBar(toolbar)
 
         linCourse.setOnClickListener {
-            var intent = Intent(this,CourseActivity::class.java)
+            var intent = Intent(this, CourseActivity::class.java)
             startActivity(intent)
         }
 
         linTeacher.setOnClickListener {
-            var intent = Intent(this,TeacherListActivity::class.java)
+            var intent = Intent(this, TeacherListActivity::class.java)
             startActivity(intent)
         }
 
         linStudent.setOnClickListener {
-            var intent = Intent(this,StudentListActivity::class.java)
+            var intent = Intent(this, StudentListActivity::class.java)
             startActivity(intent)
         }
 
         linActivities.setOnClickListener {
-            var intent = Intent(this,ActivitiesListActivity::class.java)
+            var intent = Intent(this, ActivitiesListActivity::class.java)
             startActivity(intent)
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val toggle = ActionBarDrawerToggle(
-            this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
+            this, drawerLayout, toolbar,
+            R.string.navigation_drawer_open,
+            R.string.navigation_drawer_close
         )
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
@@ -86,14 +83,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_profile -> {
                // supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer, ProfileFragment()).commit()
-                var intent = Intent(this,DetailProfileActivity::class.java)
+                var intent = Intent(this, StudentProfileActivity::class.java)
                 startActivity(intent)
             }
             R.id.nav_aboutas -> {
 
             }
             R.id.nav_logout -> {
-                var intent = Intent(this,LoginActivity::class.java)
+                var intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }
 //            R.id.nav_tools -> {

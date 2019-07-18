@@ -5,6 +5,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="iron">#CCCCCC</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#74B4E7</color>
     <color name="appColor">#9F153C</color>
     <color name="colorView">#BDBDBD</color>
     <color name="profileBackground">#9B5059</color>

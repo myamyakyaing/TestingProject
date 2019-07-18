@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".CourseDetailActivity">
+        tools:context=".activities.CourseDetailActivity">
     <include layout="@layout/course_text_bar"/>
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvDetailCourse"
