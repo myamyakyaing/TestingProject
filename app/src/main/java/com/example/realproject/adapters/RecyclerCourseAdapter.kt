@@ -1,40 +1,24 @@
 package com.example.realproject.adapters
 
-import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.example.realproject.RecyclerViewholder
-import com.example.realproject.activities.CourseDetailActivity
+import com.example.realproject.R
+import com.example.realproject.model.Course
+import com.example.realproject.viewholders.CourseViewholder
 
-class RecyclerCourseAdapter(
-    var context: Context,
-    var layout: Int,
-    var imgList: MutableList<Int>,
-    var titlelist: MutableList<String>
-) :
-    RecyclerView.Adapter<RecyclerViewholder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewholder {
-        var inflater = LayoutInflater.from(context)
-        var view = inflater.inflate(layout, parent, false)
-        return RecyclerViewholder(view)
+class RecyclerCourseAdapter(var list: List<Course>, private val onClickItem : (course: Course) -> Unit):
+    RecyclerView.Adapter<CourseViewholder>(){
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CourseViewholder {
+        var view = LayoutInflater.from(parent.context).inflate(R.layout.rv_course,parent,false)
+        return CourseViewholder(view, onClickItem)
     }
 
     override fun getItemCount(): Int {
-        return imgList.count()
+        return list.count()
     }
 
-    override fun onBindViewHolder(holder: RecyclerViewholder, position: Int) {
-        holder.img_course.setImageResource(imgList[position])
-        holder.title_course.text = titlelist[position]
-        holder.itemView.setOnClickListener {
-            var intent = Intent(context, CourseDetailActivity::class.java)
-            context.startActivity(intent)
-
-
-        }
+    override fun onBindViewHolder(holder: CourseViewholder, position: Int) {
+        holder.setData(list[position])
     }
-
 }

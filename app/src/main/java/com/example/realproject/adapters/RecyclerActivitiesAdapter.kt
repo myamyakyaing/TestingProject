@@ -1,37 +1,25 @@
 package com.example.realproject.adapters
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.realproject.RecyclerViewholder
+import com.example.realproject.viewholders.ActivityViewholder
+import com.example.realproject.R
+import com.example.realproject.model.Addressed
 
-class RecyclerActivitiesAdapter(
-    var context: Context, var layout: Int, var titleList: MutableList<String>, var subTitleList: MutableList<String>,
-    var bgList: MutableList<Int>, var favouriteList: MutableList<Int>, var favouriteTitleList: MutableList<String>,
-    var commentList: MutableList<Int>, var commentTitleList: MutableList<String>,
-    var seenList: MutableList<Int>, var seenTitleList: MutableList<String>
-) :
-    RecyclerView.Adapter<RecyclerViewholder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewholder {
-        var inflater = LayoutInflater.from(context)
-        var view = inflater.inflate(layout, parent, false)
-        return RecyclerViewholder(view)
+class RecyclerActivitiesAdapter(var list: List<Addressed>, private val onClickItem : (addressed:Addressed) -> Unit):
+    RecyclerView.Adapter<ActivityViewholder>(){
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ActivityViewholder {
+        var view = LayoutInflater.from(parent.context).inflate(R.layout.rv_event,parent,false)
+        return ActivityViewholder(view, onClickItem)
     }
 
     override fun getItemCount(): Int {
-        return titleList.count()
+        return list.count()
     }
 
-    override fun onBindViewHolder(holder: RecyclerViewholder, position: Int) {
-        holder.img_bg.setImageResource(bgList[position])
-        holder.txt_top.text = titleList[position]
-        holder.txt_below.text = subTitleList[position]
-        holder.img_favourite.setImageResource(favouriteList[position])
-        holder.txt_favourite.text = favouriteTitleList[position]
-        holder.img_comment.setImageResource(commentList[position])
-        holder.txt_comment.text = commentTitleList[position]
-        holder.img_seen.setImageResource(seenList[position])
-        holder.txt_seen.text = seenTitleList[position]
+    override fun onBindViewHolder(holder: ActivityViewholder, position: Int) {
+        holder.setData(list[position])
     }
+
 }

@@ -1,4 +1,4 @@
-package com.example.realproject
+package com.example.realproject.viewholders
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

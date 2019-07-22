@@ -6,9 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.realproject.R
 import kotlinx.android.synthetic.main.activity_detail_profile.*
-import kotlinx.android.synthetic.main.activity_detail_profile.imgTeacherProfile
-import kotlinx.android.synthetic.main.activity_detail_profile.txtTeacherName
-import kotlinx.android.synthetic.main.activity_detail_profile.txtTechProfession
 import kotlinx.android.synthetic.main.activity_student_profile.*
 import kotlinx.android.synthetic.main.activity_teacher_profile.*
 

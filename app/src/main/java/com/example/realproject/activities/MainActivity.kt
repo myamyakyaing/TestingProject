@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_profile -> {
                // supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer, ProfileFragment()).commit()
-                var intent = Intent(this, StudentProfileActivity::class.java)
+                var intent = Intent(this, DetailProfileActivity::class.java)
                 startActivity(intent)
             }
             R.id.nav_aboutas -> {

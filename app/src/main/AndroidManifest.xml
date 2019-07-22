@@ -9,23 +9,18 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".activities.ActivitiesDetailActivity">
+        </activity>
         <activity android:name=".activities.TeacherProfileActivity">
         </activity>
         <activity android:name=".activities.StudentProfileActivity">
-        </activity>
-        <activity android:name=".activities.goBasicCourseDetailActivity">
-        </activity>
-        <activity android:name=".activities.goDesignCourseDetailActivity">
-        </activity>
-        <activity android:name=".activities.goJavaCourseDetailActivity">
-        </activity>
-        <activity android:name=".activities.goPhpCourseDetailActivity">
         </activity>
         <activity android:name=".activities.CourseDetailActivity">
         </activity>
         <activity android:name=".activities.ActivitiesListActivity">
         </activity>
-        <activity android:name=".activities.StudentListActivity">
+        <activity android:name=".activities.StudentListActivity"
+                  android:theme="@style/Theme.MaterialComponents.Light">
         </activity>
         <activity android:name=".activities.TeacherListActivity">
         </activity>

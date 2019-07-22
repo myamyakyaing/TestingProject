@@ -1,12 +1,10 @@
 package com.example.realproject.adapters
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.realproject.R
-import com.example.realproject.RecyclerViewholder
-import com.example.realproject.TeacherViewholder
+import com.example.realproject.viewholders.TeacherViewholder
 import com.example.realproject.model.Teacher
 
 class RecyclerTeacherAdapter(var list: List<Teacher>, private val onClickItem : (teacher:Teacher) -> Unit):

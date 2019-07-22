@@ -8,10 +8,65 @@
         android:orientation="vertical"
         tools:context=".activities.CourseDetailActivity">
     <include layout="@layout/course_text_bar"/>
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvDetailCourse"
+    <TextView
+            android:id="@+id/txtOne"
             android:layout_marginTop="8dp"
+            android:text="Somehing"
+            android:textStyle="italic"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/txtTwo"
+            android:layout_marginTop="8dp"
+            android:text="Somehing"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/txtThree"
+            android:layout_marginTop="8dp"
+            android:text="Somehing"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/txtFour"
+            android:layout_marginTop="8dp"
+            android:text="Somehing"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/txtFive"
+            android:layout_marginTop="8dp"
+            android:text="Somehing"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            style="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/txtSix"
+            android:layout_marginTop="8dp"
+            android:text="Somehing"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
 </LinearLayout>

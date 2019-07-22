@@ -14,6 +14,7 @@
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteY="2dp"
             android:src="@drawable/chairman"
+            android:scaleType="centerCrop"
             tools:layout_editor_absoluteX="0dp"
             android:id="@+id/imgBackground"
             tools:ignore="MissingConstraints"/>
@@ -69,17 +70,17 @@
             android:layout_marginEnd="15dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="15dp"/>
-    <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:srcCompat="@mipmap/ic_launcher_round"
-            android:id="@+id/imgComment"
-            android:tint="@color/blue"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
-            app:layout_constraintStart_toEndOf="@+id/txtLove"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="25dp"/>
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@mipmap/ic_launcher_round"
+                android:id="@+id/imgComment"
+                android:tint="@color/blue"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
+                app:layout_constraintStart_toEndOf="@+id/txtLove"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"/>
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
@@ -91,17 +92,17 @@
             app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"/>
-    <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:srcCompat="@mipmap/ic_launcher_round"
-            android:id="@+id/imgShare"
-            android:tint="@color/white"
-            app:layout_constraintStart_toEndOf="@+id/txtComment"
-            android:layout_marginStart="25dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
-            android:layout_marginLeft="25dp"/>
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@mipmap/ic_launcher_round"
+                android:id="@+id/imgShare"
+                android:tint="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/txtComment"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
+                android:layout_marginLeft="40dp"/>
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
