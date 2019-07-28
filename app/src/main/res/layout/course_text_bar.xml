@@ -6,12 +6,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <androidx.appcompat.widget.Toolbar
-            android:id="@+id/textToolbar"
+            android:id="@+id/courseDetBar"
             android:layout_width="match_parent"
             app:title="Courses Details"
             app:titleTextColor="#ffffff"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/appColor"
+            android:theme="@style/NewTheme"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
 </LinearLayout>

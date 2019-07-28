@@ -97,6 +97,7 @@
                     android:hint="Profession"
                     android:layout_width="match_parent"
                     android:layout_marginRight="8dp"
+                    android:fontFamily="@font/style_american"
                     android:textSize="20dp"
                     android:background="@drawable/drawer_item_bg"
                     android:textColor="@color/appColor"
@@ -120,6 +121,7 @@
                     android:layout_marginRight="8dp"
                     android:textSize="20dp"
                     android:textColor="@color/appColor"
+                    android:fontFamily="@font/style_american"
                     android:background="@drawable/drawer_item_bg"
                     android:layout_height="40dp"/>
 
@@ -140,6 +142,7 @@
                     android:layout_width="match_parent"
                     android:layout_marginRight="8dp"
                     android:textColor="@color/appColor"
+                    android:fontFamily="@font/style_american"
                     android:background="@drawable/drawer_item_bg"
                     android:textSize="20dp"
                     android:layout_height="40dp"/>
@@ -163,6 +166,7 @@
                     android:layout_marginRight="8dp"
                     android:textSize="20dp"
                     android:textColor="@color/appColor"
+                    android:fontFamily="@font/style_american"
                     android:background="@drawable/drawer_item_bg"
                     android:layout_height="40dp"/>
 
@@ -185,6 +189,7 @@
                     android:textColor="@color/appColor"
                     android:background="@drawable/drawer_item_bg"
                     android:textSize="20dp"
+                    android:fontFamily="@font/style_american"
                     android:layout_height="40dp"/>
 
         </LinearLayout>

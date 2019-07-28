@@ -4,6 +4,8 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import com.example.realproject.R
 import kotlinx.android.synthetic.main.activity_activities_detail.*
 
@@ -27,7 +29,10 @@ class ActivitiesDetailActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
         super.onCreate(savedInstanceState)
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_activities_detail)
         var addressedName = intent.getStringExtra(ADDRESSED_NAME)
         var addressedProfile = intent.getIntExtra(ADDRESSED_PROFILE, 0)

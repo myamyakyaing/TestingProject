@@ -10,4 +10,9 @@
     <color name="appColor">#9F153C</color>
     <color name="colorView">#BDBDBD</color>
     <color name="profileBackground">#9B5059</color>
+    <color name="course_background">#BD10E0</color>
+    <color name="teacher_backgroung">#A26D3D</color>
+    <color name="student_background">#088065</color>
+    <color name="activity_background">#2674CF</color>
+    <color name="all"> #979797</color>
 </resources>

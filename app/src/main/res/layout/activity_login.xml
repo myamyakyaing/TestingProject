@@ -7,12 +7,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="#9F153C"
-        tools:context=".activities.LoginActivity">
+        tools:context=".mvp.LoginActivity">
     <TextView
             android:id="@+id/toolbar1"
             android:layout_width="match_parent"
             android:text="Login"
             android:textSize="50dp"
+            android:fontFamily="@font/style_american"
             android:textColor="#ffffff"
             android:layout_marginBottom="20dp"
             android:layout_height="70dp">
@@ -24,7 +25,7 @@
             android:text="Talent Program"
             android:textSize="25dp"
             android:gravity="center"
-            android:textStyle="italic"
+            android:fontFamily="@font/abee"
             android:textColor="#ffffff"
             android:layout_marginBottom="30dp"
             android:layout_height="50dp"/>

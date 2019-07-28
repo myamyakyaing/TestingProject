@@ -5,21 +5,29 @@ import android.os.Bundle
 import androidx.core.view.GravityCompat
 import androidx.appcompat.app.ActionBarDrawerToggle
 import android.view.MenuItem
+import android.view.Window
+import android.view.WindowManager
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.example.realproject.R
+import com.example.realproject.mvp.LoginActivity
 import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
         super.onCreate(savedInstanceState)
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+        val actionbar = supportActionBar
+        actionbar?.setDisplayHomeAsUpEnabled(true)
 
         linCourse.setOnClickListener {
             var intent = Intent(this, CourseActivity::class.java)
@@ -93,18 +101,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 var intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }
-//            R.id.nav_tools -> {
-//
-//            }
-//            R.id.nav_share -> {
-//
-//            }
-//            R.id.nav_send -> {
-//
-//            }
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         drawerLayout.closeDrawer(GravityCompat.START)
+        return true
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
         return true
     }
 }

@@ -12,8 +12,8 @@
             android:id="@+id/txtOne"
             android:layout_marginTop="8dp"
             android:text="Somehing"
-            android:textStyle="italic"
             android:layout_marginBottom="8dp"
+            android:fontFamily="@font/abee"
             android:layout_marginLeft="8dp"
             android:textColor="@color/black"
             android:layout_width="match_parent"
@@ -23,8 +23,8 @@
             android:layout_marginTop="8dp"
             android:text="Somehing"
             android:textColor="@color/black"
-            android:textStyle="italic"
             android:layout_marginBottom="8dp"
+            android:fontFamily="@font/abee"
             android:layout_marginLeft="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -35,7 +35,7 @@
             android:textColor="@color/black"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
-            android:textStyle="italic"
+            android:fontFamily="@font/abee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     <TextView
@@ -45,7 +45,7 @@
             android:textColor="@color/black"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
-            android:textStyle="italic"
+            android:fontFamily="@font/abee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     <TextView
@@ -55,7 +55,7 @@
             android:textColor="@color/black"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
-            style="italic"
+            android:fontFamily="@font/abee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     <TextView
@@ -65,7 +65,7 @@
             android:textColor="@color/black"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
-            android:textStyle="italic"
+            android:fontFamily="@font/abee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

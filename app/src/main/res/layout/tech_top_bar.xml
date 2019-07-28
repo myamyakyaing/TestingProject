@@ -5,10 +5,11 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
     <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar1"
+            android:id="@+id/techBar"
             android:layout_width="match_parent"
             app:title="Teacher List"
             app:titleTextColor="#ffffff"
+            android:theme="@style/NewTheme"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/appColor"/>
 

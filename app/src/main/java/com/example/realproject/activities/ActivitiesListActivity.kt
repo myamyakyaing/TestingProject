@@ -3,6 +3,8 @@ package com.example.realproject.activities
 import android.app.Presentation
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.realproject.R
@@ -14,8 +16,12 @@ class ActivitiesListActivity : AppCompatActivity() {
     lateinit var presentationArray: List<Addressed>
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
         super.onCreate(savedInstanceState)
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_activities_list)
+
         val addressd_chairman = Addressed("Sayar U Thein Oo","Don't wait fo opportunity, Creat it",
                                 R.drawable.chairman,R.drawable.favorite,"1.8M",R.drawable.comment,"50K",
                                 R.drawable.seen,"1.8M seen","June လ (၄) ရက္ေန႕နဲ႕ (၅) ရက္ေန႕မွာ Interview ေျဖဆိုရမယ့္သူမ်ားအေနနဲ႕ ေအာက္ပါအခ်က္အလက္မ်ားကို ေမးျမန္းသြားမွာျဖစ္ပါတယ္…\n" +

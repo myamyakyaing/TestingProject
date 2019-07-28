@@ -4,7 +4,7 @@
     <item android:id="@+id/action_settings"
           android:title="@string/action_settings"
           android:iconTint="@color/white"
-          android:icon="@drawable/filter"
+          android:icon="@drawable/filter_w"
           android:orderInCategory="100"
           app:showAsAction="always"/>
 </menu>
